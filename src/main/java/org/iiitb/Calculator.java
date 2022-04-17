@@ -8,35 +8,39 @@ public class Calculator {
 
     private static final Logger logger = LogManager.getLogger(Calculator.class);
     public static double sqRoot(double input){
-        logger.info("Applying square root function on the number : " + input);
+        logger.info("Computing Square Root");
+//        logger.info("Applying square root function on the number : " + input);
         double out = Math.sqrt(input);
-        logger.info("Result of the square root function on " + input + " is: " + out);
+//        logger.info("Result of the square root function on " + input + " is: " + out);
         return out;
     }
 
     public static int factorial(int input){
+        logger.info("Computing Factorial");
         int out = 1;
-        logger.info("Applying factorial function on the number : " + input);
+//        logger.info("Applying factorial function on the number : " + input);
         if (input < 0)
             out=0;
         for(int i=input; i>0; i--){
             out *=i;
         }
-        logger.info("Result of the factorial function on " + input + " is: " + out);
+//        logger.info("Result of the factorial function on " + input + " is: " + out);
         return out;
     }
 
     public static double naturalLog(double input){
-        logger.info("Applying natural log function on the number : " + input);
+        logger.info("Computing Natural Log");
+//        logger.info("Applying natural log function on the number : " + input);
         double out = Math.log(input);
-        logger.info("Result of the natural log function on " + input + " is: " + out);
+//        logger.info("Result of the natural log function on " + input + " is: " + out);
         return out;
     }
 
     public static double power(double inputX, double inputY){
-        logger.info("Applying power function on : " + inputX + ", " + inputY);
+        logger.info("Computing Power");
+//        logger.info("Applying power function on : " + inputX + ", " + inputY);
         double out = Math.pow(inputX, inputY);
-        logger.info("Result of power function on : " + inputX + ", " + inputY + " is: " + out);
+//        logger.info("Result of power function on : " + inputX + ", " + inputY + " is: " + out);
         return out;
     }
 
