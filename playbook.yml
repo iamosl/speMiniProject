@@ -1,0 +1,7 @@
+- name: Pull and Run docker image
+  hosts: ubuntu18
+  tasks:
+    - name: Pull iamosl/spe-calculator
+      docker_image:
+        name: iamosl/spe-calculator
+        source: pull
