@@ -1,37 +1,47 @@
 package org.iiitb;
 import java.lang.Math;
 import java.util.Scanner;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Calculator {
+
+    private static final Logger logger = LogManager.getLogger(Calculator.class);
     public static double sqRoot(double input){
+        logger.info("Applying square root function on the number : " + input);
         double out = Math.sqrt(input);
+        logger.info("Result of the square root function on " + input + " is: " + out);
         return out;
     }
 
     public static int factorial(int input){
         int out = 1;
+        logger.info("Applying factorial function on the number : " + input);
         if (input < 0)
             out=0;
         for(int i=input; i>0; i--){
             out *=i;
         }
+        logger.info("Result of the factorial function on " + input + " is: " + out);
         return out;
     }
 
     public static double naturalLog(double input){
+        logger.info("Applying natural log function on the number : " + input);
         double out = Math.log(input);
+        logger.info("Result of the natural log function on " + input + " is: " + out);
         return out;
     }
 
     public static double power(double inputX, double inputY){
+        logger.info("Applying power function on : " + inputX + ", " + inputY);
         double out = Math.pow(inputX, inputY);
+        logger.info("Result of power function on : " + inputX + ", " + inputY + " is: " + out);
         return out;
-
     }
 
     public static void main(String[] args)
     {
-
         boolean flag = true;
         Scanner in = new Scanner(System.in);
         while (flag)

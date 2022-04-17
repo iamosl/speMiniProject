@@ -1,0 +1,26 @@
+2022-04-17 14:28:00.600 [main] INFO  org.iiitb.Calculator - Applying square root function on the number : 16.0
+2022-04-17 14:28:00.602 [main] INFO  org.iiitb.Calculator - Result of the square root function on 16.0 is: 4.0
+2022-04-17 14:28:00.602 [main] INFO  org.iiitb.Calculator - Applying square root function on the number : 125.0
+2022-04-17 14:28:00.602 [main] INFO  org.iiitb.Calculator - Result of the square root function on 125.0 is: 11.180339887498949
+2022-04-17 14:28:00.603 [main] INFO  org.iiitb.Calculator - Applying factorial function on the number : 4
+2022-04-17 14:28:00.603 [main] INFO  org.iiitb.Calculator - Result of the factorial function on 4 is: 24
+2022-04-17 14:28:00.603 [main] INFO  org.iiitb.Calculator - Applying factorial function on the number : 5
+2022-04-17 14:28:00.603 [main] INFO  org.iiitb.Calculator - Result of the factorial function on 5 is: 120
+2022-04-17 14:28:00.604 [main] INFO  org.iiitb.Calculator - Applying square root function on the number : 4.0
+2022-04-17 14:28:00.604 [main] INFO  org.iiitb.Calculator - Result of the square root function on 4.0 is: 2.0
+2022-04-17 14:28:00.604 [main] INFO  org.iiitb.Calculator - Applying square root function on the number : 12.25
+2022-04-17 14:28:00.604 [main] INFO  org.iiitb.Calculator - Result of the square root function on 12.25 is: 3.5
+2022-04-17 14:28:00.605 [main] INFO  org.iiitb.Calculator - Applying power function on : 5.5, 3.0
+2022-04-17 14:28:00.605 [main] INFO  org.iiitb.Calculator - Result of power function on : 5.5, 3.0 is: 166.375
+2022-04-17 14:28:00.605 [main] INFO  org.iiitb.Calculator - Applying power function on : 3.0, 4.0
+2022-04-17 14:28:00.605 [main] INFO  org.iiitb.Calculator - Result of power function on : 3.0, 4.0 is: 81.0
+2022-04-17 14:28:00.606 [main] INFO  org.iiitb.Calculator - Applying factorial function on the number : 4
+2022-04-17 14:28:00.606 [main] INFO  org.iiitb.Calculator - Result of the factorial function on 4 is: 24
+2022-04-17 14:28:00.606 [main] INFO  org.iiitb.Calculator - Applying factorial function on the number : 5
+2022-04-17 14:28:00.606 [main] INFO  org.iiitb.Calculator - Result of the factorial function on 5 is: 120
+2022-04-17 14:28:00.607 [main] INFO  org.iiitb.Calculator - Applying natural log function on the number : 1.0
+2022-04-17 14:28:00.607 [main] INFO  org.iiitb.Calculator - Result of the natural log function on 1.0 is: 0.0
+2022-04-17 14:28:00.608 [main] INFO  org.iiitb.Calculator - Applying power function on : 4.0, 3.0
+2022-04-17 14:28:00.608 [main] INFO  org.iiitb.Calculator - Result of power function on : 4.0, 3.0 is: 64.0
+2022-04-17 14:28:00.608 [main] INFO  org.iiitb.Calculator - Applying natural log function on the number : 2.71
+2022-04-17 14:28:00.609 [main] INFO  org.iiitb.Calculator - Result of the natural log function on 2.71 is: 0.9969486348916096
