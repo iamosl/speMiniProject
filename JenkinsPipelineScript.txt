@@ -1,0 +1,38 @@
+pipeline{
+    agent any
+    stages{
+        stage ('Stage 1 : Clone Git repository') {
+            steps {
+                git 'https://github.com/iamosl/speminiproject.git'
+            }
+        }
+        stage ('Stage 2 : Maven Build') {
+            steps {
+                sh 'mvn clean install'
+            }
+        }
+        stage('Stage 3: Docker Build Image')
+        {
+            steps{
+                script{
+                    imageName = docker.build "iamosl/spe-calculator:latest"
+                }
+            }
+        }
+        stage('Stage 4: Push Docker Image')
+        {
+            steps{
+                script{
+                    docker.withRegistry("", 'docker-iamosl'){
+                        imageName.push()
+                    }
+                }
+            }
+        }
+        stage('Stage 5: Ansible Pull Image') {
+            steps {
+                ansiblePlaybook becomeUser: null, colorized: true, disableHostKeyChecking: true, installation: 'Ansible', inventory: 'inventory', playbook: 'playbook.yml', sudoUser: null
+            }
+        }
+    }
+}
